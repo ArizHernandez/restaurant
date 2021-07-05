@@ -1,14 +1,53 @@
 .shoppingCart__main-container{
-  position: relative;
+  background: $primary;
+  text-align: right;
 }
 
 .shoppingCart__table-container{
+  background: $primary;
   display: block;
-  position: absolute;
-  top: 20px;
+  height: 0px;
+  overflow: auto;
+  top: 40px;
+  transition: all ease .5s;
   width: 100%;
+  z-index: 1000;
+}
+
+.shoppingCart__table-container-show{
+  height: 200px;
 }
 
 .shoppingCart__table{
   margin: 0px auto;
+}
+
+.ShoppingCart__header{
+  th{
+    padding: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+.card__container{
+  td{
+    text-align: center;
+    padding: 20px;
+    &:nth-child(1){
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.card__image{
+  object-fit: cover;
+  width: 120px;
+  height: 90px;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+.card__title{
+  font-weight: 600;
 }
