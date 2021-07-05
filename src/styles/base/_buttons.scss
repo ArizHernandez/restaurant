@@ -1,0 +1,16 @@
+.btn{
+  border: 2px solid transparent;
+  padding: 2px 5px;
+  outline: none;
+}
+
+.btn-shoppingCart{
+  color: $primary;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  &:hover{
+    color: darken($color: $primary, $amount: 15);
+  }
+}
