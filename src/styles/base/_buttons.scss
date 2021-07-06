@@ -10,11 +10,15 @@
 .btn-shoppingCart{
   color: white;
   background: $primary;
-  padding: 10px;
-  margin: 5px 10px;
+  margin: 10px 10px;
+  margin-bottom: 0;
   &:hover{
     color: darken($color: $primary, $amount: 15);
   }
+}
+
+.btn-noti{
+  animation: vibes .5s 2;
 }
 
 .btn-primary{
@@ -22,5 +26,14 @@
   color: lighten($color: $primary, $amount: 40);
   &:hover{
     background: darken($color: $primary, $amount: 15);
+  }
+}
+
+@keyframes vibes{
+  from{
+    color: darken($color: $primary, $amount: 20)
+  }
+  to {
+    color: lighten($color: $primary, $amount: 40);
   }
 }

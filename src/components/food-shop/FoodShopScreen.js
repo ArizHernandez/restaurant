@@ -7,6 +7,8 @@ export const FoodShopScreen = () => {
     <section>
       <ShoppingCart />
 
+      <h3 className="foodShop__title">Our best plates</h3>
+
       <FoodShopCards />
     </section>
   )

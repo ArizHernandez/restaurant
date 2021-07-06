@@ -1,17 +1,26 @@
 .shoppingCart__main-container{
   background: $primary;
   text-align: right;
+  padding-bottom: 10px;
 }
 
 .shoppingCart__table-container{
   background: $primary;
-  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
   height: 0px;
   overflow: auto;
-  top: 40px;
+  margin: 0 auto;
   transition: all ease .5s;
-  width: 100%;
   z-index: 1000;
+  &::-webkit-scrollbar{
+    background: #f2f2f2;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: darken($color: $primary, $amount: 15);
+    border-radius: 7px;
+  }
 }
 
 .shoppingCart__table-container-show{
@@ -20,13 +29,20 @@
 
 .shoppingCart__table{
   margin: 0px auto;
+  background: white;
+  border-collapse: collapse;
 }
 
 .ShoppingCart__header{
   th{
     padding: 20px;
     padding-bottom: 10px;
+    text-align: center;
   }
+}
+
+th{
+  border-bottom: 1px solid #000;
 }
 
 .card__container{
@@ -50,4 +66,14 @@
 
 .card__title{
   font-weight: 600;
+}
+
+.ShoppingCart__message{
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: 0px auto;
+  margin-top: 50px;
+  color: white;
+  padding: 20px;
+  border: 2px dotted white;
 }
