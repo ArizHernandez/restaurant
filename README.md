@@ -5,7 +5,7 @@
 Este proyecto consta de un carrito de compras utilizando react, react-redux y thunk
 
 ## Demo
-[url](http://arizHernandez.github.io/JournalApp)
+[url](https://arizhernandez.github.io/restaurant/)
 
 ## Preview
   
