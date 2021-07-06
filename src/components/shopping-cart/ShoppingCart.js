@@ -8,6 +8,8 @@ export const ShoppingCart = () => {
   const {cart, ui} = useSelector(state => state);
   const [menuHidden, setMenuHidden] = useState(true);
   const dispatch = useDispatch();
+  
+  const totalCart = cart.cart.reduce((total, cartItem) => total + (cartItem.price * cartItem.mount), 0);
 
   const handleShowMenu = () => {
     setMenuHidden(!menuHidden);
@@ -46,6 +48,17 @@ export const ShoppingCart = () => {
                       <ShoppingItem key={cartItem.id} {...cartItem}/>
                     ))
                 }
+
+                <tr>
+                  <td>
+                    <h3>
+                      Total
+                    </h3>
+                  </td>
+                  <td>
+                    ${totalCart}
+                  </td>
+                </tr>
               </tbody>
             </table>
           )
