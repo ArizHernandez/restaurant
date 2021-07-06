@@ -6,4 +6,12 @@
 
 body{
   font-family: 'Poppins', sans-serif;
+  &::-webkit-scrollbar{
+    background: white;
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background: $primary;
+    border-radius: 7px;
+  }
 }
